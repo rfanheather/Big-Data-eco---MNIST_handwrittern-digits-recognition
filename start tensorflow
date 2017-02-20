@@ -1,0 +1,17 @@
+$ sudo easy_install pip
+$ sudo pip install --upgrade virtualenv
+
+Create a virtualenv environment by issuing a command of the following format:
+
+ $ virtualenv --system-site-packages targetDirectory
+
+$ source ~/tensorflow/bin/activate
+(tensorflow)$ deactivate
+
+#Invoke python from your shell as follows:
+$ python
+Enter the following short program inside the python interactive shell:
+>>> import tensorflow as tf
+>>> hello = tf.constant('Hello, TensorFlow!')
+>>> sess = tf.Session()
+>>> print(sess.run(hello))
